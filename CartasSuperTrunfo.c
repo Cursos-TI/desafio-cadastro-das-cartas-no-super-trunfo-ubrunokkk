@@ -29,14 +29,14 @@ int main() {
     float AreaCidade1, AreaCidade2, PIB1, PIB2;
 
     //Requisitando os dados das cartas ao usúario, primeiro carta 1
-    printf ("Cadastro de cartas de Super Trunfo\n Primeiro informe os dados solicitados para o cadastro da carta 1.");
+    printf ("- Cadastro de cartas de Super Trunfo -\nPrimeiro informe os dados solicitados para o cadastro da carta 1.\n");
     
     //Solicitação dos dados e armazenamento das informações
     printf("Insira uma letra de A-H que represente o estado que deseja: ");
     scanf("%c", &estado1);
 
     printf("Insira o código da carta (A letra do estado seguida de um número de 01 a 04): ");
-    scanf("%s", CodCarta1);
+    scanf("%3s", CodCarta1);
 
     printf("Insira o nome da cidade: ");
     scanf("%s", NomeCidade1);
@@ -54,8 +54,7 @@ int main() {
     scanf("%d", &NumPontosTuristicos1);
     
     //Teste de exibição
-    printf("Dados da carta:\n Letra: %c\n Código da carta: %s\n Nome da cidade: %s\n Número de habitantes: %d\n 
-        Área: %f\n PIB: %f\n Numero de pontos turísticos: %d\n", estado1, CodCarta1, NomeCidade1, Populacao1, AreaCidade1, PIB1, NumPontosTuristicos1);
+    printf("\nDados da carta: \n Letra: %c\n Código da carta: %s \n Nome da cidade: %s\n Número de habitantes: %d\n Área: %f\n PIB: %f\n Numero de pontos turísticos: %d\n", estado1, CodCarta1 , NomeCidade1, Populacao1, AreaCidade1, PIB1, NumPontosTuristicos1);
 
     return 0;
 }
