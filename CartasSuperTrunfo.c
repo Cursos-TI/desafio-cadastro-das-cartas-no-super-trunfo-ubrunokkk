@@ -8,7 +8,7 @@ int main() {
     //Declarando variáveis de ambas as cartas sendo número 1 referente a primeira carta e 2 a segunda
     char estado1, estado2, CodCarta1[4], CodCarta2[4], NomeCidade1[51], NomeCidade2[51];
     int Populacao1, Populacao2, NumPontosTuristicos1, NumPontosTuristicos2;
-    float AreaCidade1, AreaCidade2, PIB1, PIB2;
+    float AreaCidade1, AreaCidade2, PIB1, PIB2, densidadePopulacional1, densidadePopulacional2, pibPerCapita1, pibPerCapita2;
 
     //Requisitando os dados das cartas ao usúario
     printf ("- Cadastro de cartas de Super Trunfo -\n\nInforme os dados para o cadastro da 1ª carta.\n");
@@ -58,12 +58,15 @@ int main() {
 
     printf("Insira o número de pontos turísticos existentes na cidade: ");
     scanf("%d", &NumPontosTuristicos2);
+
+    //Calculo da densidade populacional e PIB per Capita
+    
     
     //Exibição dos dados da carta 1
-    printf("\n- 1ª carta - \n Estado: %c\n Código da carta: %s \n Nome da cidade: %s\n População: %d\n Área da cidade: %.2f km²\n PIB: %.2f bilhões de reais\n Número de pontos turísticos: %d\n", estado1, CodCarta1, NomeCidade1, Populacao1, AreaCidade1, PIB1, NumPontosTuristicos1);
+    printf("\n- 1ª carta - \n Estado: %c\n Código da carta: %s \n Nome da cidade: %s\n População: %d\n Área da cidade: %.2f km²\n PIB: %.2f bilhões de reais\n Número de pontos turísticos: %d\n Densidade Populacional: %.2f hab/km²\n PIB per Capita: R$%.2f", estado1, CodCarta1, NomeCidade1, Populacao1, AreaCidade1, PIB1, NumPontosTuristicos1, densidadePopulacional1, pibPerCapita1);
 
     //Exibição dos dados da carta 2
-    printf("\n- 2ª carta - \n Estado: %c\n Código da carta: %s \n Nome da cidade: %s\n População: %d\n Área da cidade: %.2f km²\n PIB: %.2f bilhões de reais\n Número de pontos turísticos: %d\n", estado2, CodCarta2, NomeCidade2, Populacao2, AreaCidade2, PIB2, NumPontosTuristicos2);
+    printf("\n- 2ª carta - \n Estado: %c\n Código da carta: %s \n Nome da cidade: %s\n População: %d\n Área da cidade: %.2f km²\n PIB: %.2f bilhões de reais\n Número de pontos turísticos: %d\n Densidade Populacional: %.2f hab/km²\n PIB per Capita: R$%.2f", estado2, CodCarta2, NomeCidade2, Populacao2, AreaCidade2, PIB2, NumPontosTuristicos2, densidadePopulacional2, pibPerCapita2);
 
     return 0;
     //Fim do código
