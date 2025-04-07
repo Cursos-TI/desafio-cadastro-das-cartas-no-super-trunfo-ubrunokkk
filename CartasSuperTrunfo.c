@@ -5,10 +5,17 @@
 
 int main() {
     
-    //Declarando variáveis de ambas as cartas sendo número 1 referente a primeira carta e 2 a segunda
+    //Declarando variáveis de ambas as cartas, sendo número 1 referente a primeira carta e 2 a segunda
     char estado1, estado2, CodCarta1[4], CodCarta2[4], NomeCidade1[51], NomeCidade2[51];
-    int Populacao1, Populacao2, NumPontosTuristicos1, NumPontosTuristicos2;
-    float AreaCidade1, AreaCidade2, PIB1, PIB2, densidadePopulacional1, densidadePopulacional2, pibPerCapita1, pibPerCapita2;
+    int NumPontosTuristicos1 = 0, NumPontosTuristicos2 = 0;
+    unsigned long int Populacao1 = 0, Populacao2 = 0;
+
+    //floats carta 1
+    float AreaCidade1 = 0, PIB1 = 0,  densidadePopulacional1 = 0, pibPerCapita1 = 0, superPoder1 = 0;
+
+    //floats carta 2
+    float AreaCidade2 = 0, PIB2 = 0, densidadePopulacional2 = 0, pibPerCapita2  = 0, superPoder2 = 0;
+
 
     //Requisitando os dados das cartas ao usúario
     printf ("- Cadastro de cartas de Super Trunfo -\n\nInforme os dados para o cadastro da 1ª carta.\n");
@@ -24,7 +31,7 @@ int main() {
     scanf(" %50s", NomeCidade1);
 
     printf("Insira o número de habitantes: ");
-    scanf("%d", &Populacao1);
+    scanf("%lu", &Populacao1);
 
     printf("Insira a área da cidade (em km²): ");
     scanf("%f", &AreaCidade1);
@@ -48,7 +55,7 @@ int main() {
     scanf("%50s", NomeCidade2);
 
     printf("Insira o número de habitantes: ");
-    scanf("%d", &Populacao2);
+    scanf("%lu", &Populacao2);
 
     printf("Insira a área da cidade (em km²): ");
     scanf("%f", &AreaCidade2);
@@ -71,6 +78,9 @@ int main() {
 
     //Exibição dos dados da carta 2
     printf("\n- 2ª carta - \n Estado: %c\n Código da carta: %s \n Nome da cidade: %s\n População: %d\n Área da cidade: %.2f km²\n PIB: %.2f bilhões de reais\n Número de pontos turísticos: %d\n Densidade Populacional: %.2f hab/km²\n PIB per Capita: R$%.2f \n", estado2, CodCarta2, NomeCidade2, Populacao2, AreaCidade2, PIB2, NumPontosTuristicos2, densidadePopulacional2, pibPerCapita2);
+
+    //Calculo do Super Poder
+
 
     return 0;
     //Fim do código
